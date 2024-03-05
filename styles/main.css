@@ -9,6 +9,9 @@ body {
   font-size: 1rem;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-slider {
@@ -65,4 +68,53 @@ body {
 }
 .testimonial .author__bg-image {
   margin-left: -5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .testimonial-slider {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-size: auto;
+    background-position-x: 40rem;
+    background-position-y: 2rem;
+  }
+  .testimonial__image {
+    width: 550px;
+    height: 552px;
+    margin-top: 5.5rem;
+    margin-left: 32rem;
+  }
+  .testimonial__toggler {
+    border: solid 1px red;
+    margin-left: 48rem;
+    margin-top: -4rem;
+    width: 7rem;
+  }
+  .testimonial__content {
+    width: 60%;
+    margin-top: -30.6rem;
+    padding: 4.5rem 5rem 0 8rem;
+    color: hsl(240, 38%, 20%);
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position-x: 14rem;
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .testimonial__quote {
+    line-height: 2.8rem;
+  }
+  .testimonial__author {
+    display: flex;
+    gap: 1rem;
+  }
+  .testimonial .author__bg-image {
+    margin-top: 8rem;
+    margin-left: -25rem;
+  }
 }/*# sourceMappingURL=main.css.map */

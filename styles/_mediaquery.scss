@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1440px) {
+    .testimonial-slider {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row-reverse;
+      background-size: auto;
+      background-position-x: 40rem;
+      background-position-y: 2rem;
+  }
+  
+  .testimonial {
+      &__image {
+          width: 550px;
+          height: 552px;
+          margin-top: 5.5rem;
+          margin-left: 32rem;
+      }
+      &__toggler{
+        border: solid 1px red;
+        margin-left: 48rem;
+        margin-top: -4rem;
+        width: 7rem;
+      }
+      &__content {
+          width: 60%;
+          margin-top: -30.6rem;
+          padding: 4.5rem 5rem 0 8rem;
+          color: $DarkBlue;
+          background-image: url(../images/pattern-quotes.svg);
+          background-repeat: no-repeat;
+          background-size: 15%;
+          background-position-x: 14rem;
+          line-height: 1.5rem;
+          font-size: 1.15rem;
+          font-size: $FontSize;
+          text-align: left;
+      }
+      &__quote {
+          line-height: 2.8rem;
+      }
+      &__author{
+          display: flex;
+          gap: 1rem;
+
+      }
+      .author__bg-image{
+          margin-top: 8rem;
+          margin-left: -25rem;
+      }
+  
+    }
+}
