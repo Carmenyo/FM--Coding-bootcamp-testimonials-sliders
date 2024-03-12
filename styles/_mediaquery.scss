@@ -1,3 +1,23 @@
-@media only screen and (min-width: 1440px) {
-  
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      width: 350px;
+      margin: 10px auto;
+  }
+
+  .feedback {
+      text-align: center;
+      margin-top: 50px;
+  }
+
+  .feedback img {
+      left: 40%;
+  }
+  .role {
+      display: block;
+  }
+
+  .navigation {
+      left: 40%;
+  }
 }

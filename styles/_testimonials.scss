@@ -1,84 +1,55 @@
 .container {
-    min-height: 100vh;
-    width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-image: url(../images/pattern-curve.svg);
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.slider {
-    display: block;
-    height: 350px;
-    width: 100%;
-    margin: 0 auto;
+    width: 768px;
     position: relative;
 
-    .slide-1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .slide-img {
-        width: 100%;
-        margin: 0 auto;
-        padding: 30px;
-        background-image: url(../images/pattern-bg.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .slide-text {
-        padding-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-image: url(../images/pattern-quotes.svg);
-        background-repeat: no-repeat;
-        background-size: 80px;
-        background-position: top center;
-        color: $DarkBlue;
-    }
-    .testimonial-text {
-        max-width: 20rem;
-        font-weight: 300;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-        letter-spacing: 0.5px;
-    }
-        .author-text {
-            margin-top: 30px;
-            font-size: 1rem;
-            font-weight: 800;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-.author-text span{
-        font-weight: 300;
-        color: $GrayishBlue;
 }
 
-
-        .slide-img img {
-        
-            height: 255px;
-            width: 255px;
-            border-radius: .5rem;
-        }
-
-        
-    
-    .slide-2 {
-        display: none;
-    }
+.feedback {
+    position: relative;
 }
+
+.feedback img {
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+}
+
+.feedback p {
+    font-size: 18px;
+    color: var(--darkBlue);
+    font-weight: 300;
+}
+
+.name {
+    color: $DarkBlue;
+    padding-top: 15px;
+}
+
+.role {
+    color: $GrayishBlue;
+    padding-left: 10px;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.navigation {
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+}
+
+.navigation img {
+    cursor: pointer;
+    padding: 8px 10px 5px 10px;
+}
+
